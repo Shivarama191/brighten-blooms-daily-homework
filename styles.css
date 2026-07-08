@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --navy: #101f59;
   --navy-deep: #0b1748;
   --cream: #f7f3eb;
@@ -1023,7 +1023,6 @@ body {
   .download-button,
   .secondary-button { width: 100%; }
 }
-<<<<<<< HEAD
 
 /* Brand + JPEG export refinement */
 :root {
@@ -2626,5 +2625,3 @@ body {
     min-height: 360px;
   }
 }
-=======
->>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac

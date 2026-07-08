@@ -2625,3 +2625,34 @@ body {
     min-height: 360px;
   }
 }
+
+/* Normal document scrolling for deployed hosts */
+html,
+body,
+.app-shell,
+.dashboard {
+  height: auto;
+  overflow: visible;
+}
+
+.dashboard-header,
+.toolbar,
+.history-surface {
+  position: static !important;
+  top: auto !important;
+}
+
+.workspace-grid,
+.editor-surface,
+.history-surface,
+.history-list,
+.sheet-wrap {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+@media (max-width: 720px) {
+  .sheet-wrap {
+    overflow: visible !important;
+  }
+}

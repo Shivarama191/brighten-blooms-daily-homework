@@ -42,18 +42,10 @@ const subjects = [
     watermark: "./assets/watermarks/evs-science.png"
   },
   {
-    id: "gk",
-    label: "GK",
+    id: "gkComputer",
+    label: "GK / COMPUTER",
     color: "pink",
     icon: "./assets/icons/gk.png",
-    decor: "./assets/decor/gk-decor.png",
-    watermark: "./assets/watermarks/gk.png"
-  },
-  {
-    id: "computer",
-    label: "COMPUTER",
-    color: "blue",
-    icon: "./assets/icons/computer.png",
     decor: "./assets/decor/computer-decor.png",
     watermark: "./assets/watermarks/computer.png"
   },
@@ -161,7 +153,9 @@ function fillForm(record = {}) {
   els.dateInput.value = record.dateText || todayText();
   subjects.forEach((subject) => {
     const textarea = document.querySelector(`#${subject.id}Input`);
-    textarea.value = record.subjects?.[subject.id] || "";
+    textarea.value = subject.id === "gkComputer"
+      ? record.subjects?.gkComputer || record.subjects?.gk || record.subjects?.computer || ""
+      : record.subjects?.[subject.id] || "";
     grow(textarea);
   });
 }

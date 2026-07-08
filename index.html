@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brighten Blooms Homework</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="login-view" id="loginView" aria-labelledby="loginTitle">
+        <div class="login-panel">
+          <div class="brand-lockup">
+            <div class="school-seal">
+              <span class="seal-flower">BB</span>
+              <small>Brighten<br />Blooms</small>
+            </div>
+            <div>
+              <p class="eyebrow">Principal Dashboard</p>
+              <h1 id="loginTitle">Homework Manager</h1>
+              <p class="muted">Create, save, and download the daily homework PDF.</p>
+            </div>
+          </div>
+
+          <form class="login-form" id="loginForm">
+            <label>
+              Email
+              <input id="emailInput" type="email" autocomplete="email" placeholder="principal@example.com" />
+            </label>
+            <label>
+              Password
+              <input id="passwordInput" type="password" autocomplete="current-password" placeholder="Password" />
+            </label>
+            <button class="primary-button" type="submit">Login</button>
+          </form>
+
+          <button class="secondary-button full-width" id="demoLoginButton" type="button">Continue in demo mode</button>
+          <p class="status-text" id="loginStatus">Checking app setup...</p>
+        </div>
+      </section>
+
+      <section class="dashboard" id="dashboard">
+        <header class="dashboard-header">
+<<<<<<< HEAD
+          <div class="app-title-lockup">
+            <span class="app-header-icon" aria-hidden="true"></span>
+            <div>
+              <p class="eyebrow">Brighten Blooms</p>
+              <h1>Daily Homework</h1>
+            </div>
+          </div>
+          <div class="header-actions">
+=======
+          <div>
+            <p class="eyebrow">Brighten Blooms</p>
+            <h1>Daily Homework</h1>
+          </div>
+          <div class="header-actions">
+            <span class="mode-pill" id="modePill">Local demo mode</span>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+            <button class="ghost-button" id="logoutButton" type="button">Reset View</button>
+          </div>
+        </header>
+
+        <div class="workspace-grid">
+          <section class="editor-surface" aria-label="Homework editor">
+            <div class="toolbar">
+<<<<<<< HEAD
+              <button class="primary-button" id="saveButton" type="button"><span class="button-icon save-icon" aria-hidden="true"></span>Save</button>
+              <div class="download-menu" id="downloadMenu">
+                <button class="download-button" id="downloadButton" type="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="button-icon download-icon" aria-hidden="true"></span>Download<span class="chevron-icon" aria-hidden="true"></span>
+                </button>
+                <div class="download-options" id="downloadOptions" role="menu" aria-label="Download options">
+                  <button type="button" role="menuitem" data-format="jpeg"><span aria-hidden="true">🖼</span>Download as JPEG</button>
+                  <button type="button" role="menuitem" data-format="png"><span aria-hidden="true">🖼</span>Download as PNG</button>
+                  <button type="button" role="menuitem" data-format="pdf"><span aria-hidden="true">📄</span>Download as PDF</button>
+                </div>
+              </div>
+              <button class="secondary-button" id="clearButton" type="button"><span class="button-icon clear-icon" aria-hidden="true"></span>Clear</button>
+=======
+              <button class="primary-button" id="saveButton" type="button">Save</button>
+              <button class="download-button" id="downloadButton" type="button">Download PDF</button>
+              <button class="secondary-button" id="clearButton" type="button">Clear</button>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+            </div>
+
+            <div class="sheet-wrap">
+              <article class="homework-sheet" id="homeworkSheet">
+                <header class="sheet-top">
+<<<<<<< HEAD
+                  <div class="mini-logo official-logo">
+                    <img src="./assets/brighten-blooms-logo.png" alt="Brighten Blooms logo" />
+                  </div>
+                  <div class="school-title">
+                    <h2><span>BRIGHTEN</span><span>BLOOMS</span></h2>
+                    <p>SPARKLE IN ACADEMICS</p>
+                    <small>IBRAHIMPATNAM</small>
+=======
+                  <div class="mini-logo">
+                    <strong>Brighten<br />Blooms</strong>
+                    <span>Sparkle in Academics</span>
+                  </div>
+                  <div class="school-title">
+                    <h2>BRIGHTEN BLOOMS</h2>
+                    <p>SPARKLE IN ACADEMICS</p>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+                  </div>
+                  <div class="award-badge">
+                    <span>1</span>
+                    <small>Excellence in<br />Education</small>
+                  </div>
+                </header>
+
+                <section class="title-band">
+                  <span class="star left-star">star</span>
+                  <h3>HOMEWORKS</h3>
+                  <span class="star right-star">star</span>
+                </section>
+
+                <section class="meta-row">
+                  <label>CLASS: <input id="classInput" maxlength="12" placeholder="____" /></label>
+                  <span class="divider"></span>
+<<<<<<< HEAD
+=======
+                  <label>SEC: <input id="sectionInput" maxlength="8" placeholder="___" /></label>
+                  <span class="divider"></span>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+                  <label>DATE: <input id="dateInput" maxlength="12" placeholder="DD/MM/YY" /></label>
+                </section>
+
+                <section class="subject-list" id="subjectList"></section>
+
+                <footer class="sheet-footer">
+                  <div class="footer-banner">
+                    <strong>Brighten Blooms</strong>
+<<<<<<< HEAD
+                    <span>Where Learning Blooms & Futures Shine!</span>
+=======
+                    <span>Where Learning Blooms and Future Shines!</span>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+                  </div>
+                  <div class="footer-values">
+                    <span>FOCUS</span>
+                    <span>LEARN</span>
+                    <span>ACHIEVE</span>
+                    <span>SUCCEED</span>
+                  </div>
+                  <div class="footer-contact">
+                    <span>Ibrahimpatnam</span>
+<<<<<<< HEAD
+                    <span>80198 95599</span>
+=======
+                    <span>8019895599</span>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+                    <span>www.brightenblooms.in</span>
+                  </div>
+                </footer>
+              </article>
+            </div>
+
+            <p class="status-text" id="saveStatus">Ready.</p>
+          </section>
+
+          <aside class="history-surface" aria-label="Saved homework history">
+            <div class="history-heading">
+              <div>
+                <p class="eyebrow">Saved Records</p>
+                <h2>History</h2>
+              </div>
+<<<<<<< HEAD
+              <button class="secondary-button compact" id="refreshButton" type="button"><span class="button-icon refresh-icon" aria-hidden="true"></span>Refresh</button>
+            </div>
+            <div class="history-list" id="historyList">
+              <div class="empty-state">
+                <span class="empty-illustration" aria-hidden="true"></span>
+                <strong>No saved records yet.</strong>
+                <span>Your saved homework will appear here.</span>
+              </div>
+=======
+              <button class="secondary-button compact" id="refreshButton" type="button">Refresh</button>
+            </div>
+            <div class="history-list" id="historyList">
+              <p class="empty-state">No saved records yet.</p>
+>>>>>>> 8b96faeee5150a819d07cbe9531f6581f293d9ac
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

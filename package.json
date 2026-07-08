@@ -1,0 +1,17 @@
+{
+  "name": "brighten-blooms-homework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Brighten Blooms homework sheet generator",
+  "scripts": {
+    "dev": "node serve-local.js",
+    "start": "node serve-local.js"
+  },
+  "keywords": [
+    "homework",
+    "school",
+    "brighten-blooms"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
